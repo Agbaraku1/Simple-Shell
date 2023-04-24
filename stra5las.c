@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-* _strlen - will count the length of a string
-* @s: is a string
-* Return: will return length of string
+* _strlen - Counts the length of a string
+* @s: string
+* Return: Returns length of string
 **/
 
 int _strlen(char *s)
@@ -15,10 +15,10 @@ return (l);
 }
 
 /**
-* _strcat - it concatenates two strings
-* @dest: is the destiny string
-* @src: is the source string
-* Return: is a concatenated string with overwritten null byte
+* _strcat - Concatenates two strings
+* @dest: The destiny string
+* @src: The source string
+* Return: A concatenated string with overwritten null byte
 **/
 
 char *_strcat(char *dest, char *src)
@@ -32,10 +32,10 @@ return (dest);
 }
 
 /**
-* _strcmp -will compare strings
-* @s1: is a char pointer
-* @s2: is a char pointer
-* Return: negative, 0 or positive
+* _strcmp - compare strings
+* @s1: char pointer
+* @s2: char pointer
+* Return: negative, 0 or positiv
 **/
 
 int _strcmp(char *s1, char *s2)
@@ -93,4 +93,3 @@ x++;
 }
 s[x] = '\0';
 return (s);
-}
