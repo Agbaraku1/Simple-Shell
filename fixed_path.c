@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-* _path - Prints the environment PATH
-* @env: Environment
-* @fst: The 1st tokenized keyword (user inputted argument)
-* @inpt: Tokenized arguments
+* _path - this will print the environment PATH
+* @env: this is the Environment
+* @fst: formed as the 1st tokenized keyword (user inputted argument)
+* @inpt: The Tokenized arguments
 * @ex_st: Exit status
 * Return: 0 on success
 **/
