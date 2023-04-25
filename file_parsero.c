@@ -2,7 +2,7 @@
 
 /**
  * parsero - it will parse/separate text of a string into tokens
- * It uses a space as delimiter
+ * Space is used as a delimiter
  * @l: is a char pointer storing user input
  * Return: a char double pointer comprised of a char pointers
  */
