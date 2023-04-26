@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * c_t_size - simply gives out number of delim
- * @str: denotes user's command typed into shell
- * @delm: the delimeter (e.g. " ");
- * Return: to number of tokens
+ * c_t_size - will return number of delim
+ * @str: is the user's command typed into shell
+ * @delm:is the  delimeter
+ * Return: number of all token
  */
 int c_t_size(char *str, char delm)
 {
@@ -23,12 +23,10 @@ int c_t_size(char *str, char delm)
 
 
 /**
- * c_str_tok - tokenizes a string even the continuous delim with empty string
- * (e.g. path --> ":/bin::/bin/usr" )
- * @str: user's command typed into shell
- * @delm: delimeter (e.g. " ");
- * Return: an array of tokens (e.g. {"\0", "/bin", "\0", "/bin/usr"}
- * (purpose is to have which command look through current directory if ":")
+ * c_str_tok - will tokenize a string even the continuous delim with empty string
+ * @stris :is the  user's command typed into shell
+ * @delm: is the delimeter
+ * Return: an array of all token
  */
 char **c_str_tok(char *str, char *delm)
 {
@@ -36,15 +34,18 @@ char **c_str_tok(char *str, char *delm)
 	char **toks = NULL, d_ch;
 
 	d_ch = delm[0];
+
 	buffsize = c_t_size(str, d_ch);
 	toks = malloc(sizeof(char *) * (buffsize + 2));
 	if (toks == NULL)
 		return (NULL);
 
+
 	while (str[se] != '\0')
 		se++;
 	while (si < se)
 	{
+
 		len = t_strlen(str, si, d_ch);
 		toks[p] = malloc(sizeof(char) * (len + 1));
 		if (toks[p] == NULL)
